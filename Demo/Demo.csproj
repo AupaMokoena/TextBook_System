@@ -1,0 +1,249 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED755555-0ED0-472E-9643-BACCBA60CDFD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Demo</RootNamespace>
+    <AssemblyName>Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BackImages\Background1.jpg" />
+    <Content Include="BackImages\Background4.jpg" />
+    <Content Include="BackImages\Background5.jpg" />
+    <Content Include="BackImages\Background6.jpg" />
+    <Content Include="BackImages\BackImage2.jpg" />
+    <Content Include="BackImages\BackImage3.jpg" />
+    <Content Include="BackImages\gradient-blue-linear-white-1920x1080-c2-00bfff-ffffff-a-285-f-14.jpg" />
+    <Content Include="BackImages\Gradient.jpg" />
+    <Content Include="BackImages\HomeScreen.jpg" />
+    <Content Include="BackImages\logo.png" />
+    <Content Include="BackImages\teacher Login.jpg" />
+    <Content Include="Book.aspx">
+      <BrowseToURL>~/HomePage.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Books\BusinessGrade12.jpg" />
+    <Content Include="Books\geographyGrade10.png" />
+    <Content Include="Books\Grade-2-Subtraction.jpg" />
+    <Content Include="Books\Grade1Math.jpeg" />
+    <Content Include="Books\lifeSkillsFrade6.jpg" />
+    <Content Include="Books\mathGrade4.jpg" />
+    <Content Include="Books\mathGrade5.jpg" />
+    <Content Include="Books\physicsgarde11.jpg" />
+    <Content Include="Books\platinumGrade2.jpg" />
+    <Content Include="Books\platinumGrade3.jpg" />
+    <Content Include="Books\spotlight_english_activities_learners_book_grade_1.jpg" />
+    <Content Include="Books\SSgrade8.jpg" />
+    <Content Include="Books\Study&amp;master.png" />
+    <Content Include="Books\Zulu-Handbook-Study-Guide-FA1-1.jpg" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="Learner_Downloading.aspx">
+      <BrowseToURL>~/HomePage.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Media\bUJYaSO9.png" />
+    <Content Include="Media\email.jpg" />
+    <Content Include="Media\Facebook.png" />
+    <Content Include="Registering.aspx">
+      <BrowseToURL>~/HomePage.aspx</BrowseToURL>
+    </Content>
+    <Content Include="ScreenSize.css" />
+    <Content Include="Styling.css" />
+    <Content Include="Teacher Books\AccountingG12.png" />
+    <Content Include="Teacher Books\Forein English.jpg" />
+    <Content Include="Teacher Books\LifeScienceG10.png" />
+    <Content Include="Teacher Books\MathG5.png" />
+    <Content Include="Teacher Books\p-3851-EssentialU1_2Cover.jpg" />
+    <Content Include="Teacher Books\PhysicsG10.png" />
+    <Content Include="Teacher Books\Primary-Teacher-Guide-Grades1-3-Year-B-Cover.jpg" />
+    <Content Include="Teacher Books\ScienceGr8.jpg" />
+    <Content Include="TeacherLogin.aspx">
+      <BrowseToURL>~/HomePage.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Leaner_Login.aspx">
+      <BrowseToURL>~/HomePage.aspx</BrowseToURL>
+    </Content>
+    <Content Include="LearnerBooks.aspx">
+      <BrowseToURL>~/HomePage.aspx</BrowseToURL>
+    </Content>
+    <Content Include="TeacherSite.aspx">
+      <BrowseToURL>~/HomePage.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Teacher_Books.aspx">
+      <BrowseToURL>~/HomePage.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Book.aspx.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Book.aspx.designer.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Learner_Downloading.aspx.cs">
+      <DependentUpon>Learner_Downloading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Learner_Downloading.aspx.designer.cs">
+      <DependentUpon>Learner_Downloading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registering.aspx.cs">
+      <DependentUpon>Registering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registering.aspx.designer.cs">
+      <DependentUpon>Registering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherLogin.aspx.cs">
+      <DependentUpon>TeacherLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherLogin.aspx.designer.cs">
+      <DependentUpon>TeacherLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Leaner_Login.aspx.cs">
+      <DependentUpon>Leaner_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Leaner_Login.aspx.designer.cs">
+      <DependentUpon>Leaner_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LearnerBooks.aspx.cs">
+      <DependentUpon>LearnerBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LearnerBooks.aspx.designer.cs">
+      <DependentUpon>LearnerBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TeacherSite.aspx.cs">
+      <DependentUpon>TeacherSite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherSite.aspx.designer.cs">
+      <DependentUpon>TeacherSite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Books.aspx.cs">
+      <DependentUpon>Teacher_Books.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher_Books.aspx.designer.cs">
+      <DependentUpon>Teacher_Books.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50397</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50397/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

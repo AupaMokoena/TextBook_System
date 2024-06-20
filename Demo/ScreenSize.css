@@ -1,0 +1,22 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+#Full{
+    height:100vh;
+}
+#Wide{
+    width:100%;
+
+}
+#Position{
+    float:right;
+    top:0;
+    right:0;
+}
